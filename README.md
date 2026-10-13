@@ -1,5 +1,12 @@
 # Enterprise Agentic AI Operations Platform
 
+## Overview
+
+A small operations agent that runs a detect, plan and verify loop without paging anyone. The loop is exposed through a `POST /agent/run` endpoint, and a versioned `/v1` ops API adds workspaces, tenant isolation, job approval and audit records. Tests cover both the agent loop and the ops layer, and a production apply request is refused.
+
+- **Built with:** Python, pytest, Docker Compose, GitHub Actions
+- **Scope:** Local laptop lab with tests; it does not call a hosted model or apply production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
